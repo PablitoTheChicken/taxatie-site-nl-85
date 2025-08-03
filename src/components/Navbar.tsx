@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +21,8 @@ const Navbar = () => {
     <nav className="bg-card border-b border-border shadow-card-professional sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo placeholder */}
-          <div className="flex-shrink-0 flex items-center">
-            <div className="w-40 h-10 bg-muted rounded-md flex items-center justify-center">
-              <span className="text-sm text-muted-foreground">TK Taxaties Logo</span>
-            </div>
-          </div>
+          {/* Logo */}
+          <Logo />
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
