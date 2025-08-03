@@ -8,12 +8,12 @@ const Homepage = () => {
     {
       icon: Home,
       title: "Woningtaxaties",
-      description: "Professionele taxaties voor woningen en appartementen"
+      description: "Professionele taxaties voor woningen en eengezinshuizen"
     },
     {
       icon: Building,
-      title: "Bedrijfspanden",
-      description: "Waardebepaling van commercieel onroerend goed"
+      title: "Appartementtaxaties",
+      description: "Waardebepaling van appartementen en condominiums"
     },
     {
       icon: Calculator,
@@ -32,7 +32,7 @@ const Homepage = () => {
     "Uitgebreide rapporten volgens NRVT-normen",
     "Scherpe prijzen en snelle service",
     "Persoonlijke benadering",
-    "Landelijke dekking"
+    "Dekking Veenendaal en omstreken"
   ];
 
   return (
@@ -44,7 +44,7 @@ const Homepage = () => {
             Professionele Taxaties
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up">
-            TK Taxaties biedt betrouwbare en professionele taxatiediensten voor al uw onroerend goed behoeften in heel Nederland.
+            TK Taxaties biedt betrouwbare en professionele taxatiediensten voor woningen en appartementen in Veenendaal en omstreken.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
             <Button size="lg" className="bg-gradient-primary shadow-professional" asChild>

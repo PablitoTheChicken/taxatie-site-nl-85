@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">TK Taxaties</h3>
             <p className="text-primary-foreground/80 mb-4">
-              Professionele taxaties voor al uw onroerend goed behoeften.
+              Professionele taxaties voor woningen en appartementen in Veenendaal en omstreken.
               Ervaren, betrouwbaar en altijd scherp geprijsd.
             </p>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-3" />
-                <span className="text-primary-foreground/80">Nederland</span>
+                <span className="text-primary-foreground/80">Veenendaal en omstreken</span>
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Diensten</h3>
             <ul className="space-y-2 text-primary-foreground/80">
               <li>Woningtaxaties</li>
-              <li>Bedrijfspandtaxaties</li>
+              <li>Appartementtaxaties</li>
               <li>Waardebepaling</li>
               <li>Hypotheektaxaties</li>
             </ul>

@@ -37,7 +37,7 @@ const Over = () => {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Met jarenlange ervaring in de taxatiewereld, bieden wij professionele en betrouwbare 
-            waarderingen van onroerend goed door heel Nederland.
+            waarderingen van woningen en appartementen in Veenendaal en omstreken.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const Over = () => {
                 hebben wij duizenden succesvolle taxaties uitgevoerd.
               </p>
               <p>
-                Wij zijn gespecialiseerd in woningtaxaties, bedrijfspandtaxaties en hypotheektaxaties. 
+                Wij zijn gespecialiseerd in woningtaxaties, appartementtaxaties en hypotheektaxaties. 
                 Onze rapportages voldoen aan alle NRVT-normen en worden geaccepteerd door alle 
                 Nederlandse banken en financiële instellingen.
               </p>

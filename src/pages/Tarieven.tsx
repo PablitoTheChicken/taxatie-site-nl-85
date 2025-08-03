@@ -19,15 +19,15 @@ const Tarieven = () => {
       popular: false
     },
     {
-      name: "Bedrijfspand Taxatie",
-      price: "€695",
-      description: "Voor commercieel onroerend goed",
+      name: "Appartementtaxatie",
+      price: "€345",
+      description: "Voor appartementen en condominiums",
       features: [
-        "Professionele bedrijfspandtaxatie",
-        "Uitgebreide marktanalyse",
-        "Huurwaarde bepaling",
-        "Rapport binnen 7 werkdagen",
-        "Persoonlijke presentatie mogelijk"
+        "Professionele appartementtaxatie",
+        "VvE-gegevens analyse",
+        "Lokatie en voorzieningen beoordeling",
+        "Rapport binnen 5 werkdagen",
+        "Persoonlijke toelichting mogelijk"
       ],
       popular: true
     },

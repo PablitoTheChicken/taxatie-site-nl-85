@@ -90,7 +90,7 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary mr-3" />
                     <h3 className="text-lg font-semibold">Werkgebied</h3>
                   </div>
-                  <p className="text-muted-foreground">Heel Nederland</p>
+                  <p className="text-muted-foreground">Veenendaal en omstreken</p>
                   <p className="text-sm text-muted-foreground mt-2">
                     Wij komen bij u ter plaatse
                   </p>
@@ -164,7 +164,7 @@ const Contact = () => {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="woning">Woningtaxatie</SelectItem>
-                          <SelectItem value="bedrijf">Bedrijfspand</SelectItem>
+                          <SelectItem value="appartement">Appartementtaxatie</SelectItem>
                           <SelectItem value="hypotheek">Hypotheektaxatie</SelectItem>
                           <SelectItem value="anders">Anders</SelectItem>
                         </SelectContent>
