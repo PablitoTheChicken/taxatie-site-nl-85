@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-3" />
-                <span className="text-primary-foreground/80">Veenendaal en omstreken</span>
+                <span className="text-primary-foreground/80">KVK: 97971375</span>
               </div>
             </div>
           </div>
