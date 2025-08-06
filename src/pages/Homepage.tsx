@@ -74,25 +74,12 @@ const Homepage = () => {
               <h2 className="text-3xl font-bold text-foreground mb-6">
                 Wanneer heb je een taxatierapport nodig?
               </h2>
-              <p className="text-muted-foreground mb-6">
-                Een taxatierapport kan in de volgende gevallen noodzakelijk zijn:
-              </p>
+              
               <div className="space-y-3">
-                {[
-                  "Aankoop van een nieuw huis",
-                  "Aankoop van nieuw huis voor verhuur", 
-                  "Verbouwing (en deze financieren vanuit de hypotheek)",
-                  "Oversluiting hypotheek en aanvraag renteverlaging",
-                  "Scheiding",
-                  "Overlijden (voor boedelverdeling)",
-                  "Voorafgaand aan de bouw van een nieuwe woning",
-                  "Tijdens de bouw van een nieuwe woning"
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center">
+                {["Aankoop van een nieuw huis", "Aankoop van nieuw huis voor verhuur", "Verbouwing (en deze financieren vanuit de hypotheek)", "Oversluiting hypotheek en aanvraag renteverlaging", "Scheiding", "Overlijden (voor boedelverdeling)", "Voorafgaand aan de bouw van een nieuwe woning", "Tijdens de bouw van een nieuwe woning"].map((item, index) => <div key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
                     <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             <div>
@@ -100,12 +87,10 @@ const Homepage = () => {
                 Waarom kiezen voor TK Woningtaxaties?
               </h2>
               <div className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center">
+                {benefits.map((benefit, index) => <div key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
                     <span className="text-foreground">{benefit}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               <div className="mt-8">
                 <Button className="bg-gradient-primary" asChild>
