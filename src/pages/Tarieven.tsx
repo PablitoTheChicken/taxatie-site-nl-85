@@ -20,17 +20,8 @@ const Tarieven = () => {
     features: ["Professionele appartementtaxatie", "VvE-gegevens analyse", "Lokatie en voorzieningen beoordeling", "Rapport binnen 5 werkdagen", "Persoonlijke toelichting mogelijk"]
   }];
   const additionalServices = [{
-    service: "Spoedtaxatie (binnen 48 uur)",
-    price: "+ €150"
-  }, {
-    service: "Extra exemplaar rapport",
-    price: "€25"
-  }, {
-    service: "Digitale plattegronden",
-    price: "€75"
-  }, {
-    service: "Herbeoordeling na verbouwing",
-    price: "€195"
+    service: "Taxatie voor en na verbouwing",
+    price: "€50,-"
   }];
   return <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
