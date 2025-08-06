@@ -78,31 +78,6 @@ const Over = () => {
           </div>
         </div>
 
-        {/* Values Section */}
-        <div className="bg-gradient-subtle rounded-lg p-8 mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Onze Kernwaarden</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4 text-primary">Betrouwbaarheid</h3>
-              <p className="text-muted-foreground">
-                Wij staan voor transparante communicatie en leveren altijd wat wij beloven.
-              </p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4 text-primary">Kwaliteit</h3>
-              <p className="text-muted-foreground">
-                Elke taxatie wordt uitgevoerd volgens de hoogste professionele standaarden.
-              </p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4 text-primary">Service</h3>
-              <p className="text-muted-foreground">
-                Persoonlijke aandacht en snelle service staan bij ons centraal.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Process Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Ons Proces</h2>
