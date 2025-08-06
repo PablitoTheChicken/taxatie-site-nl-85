@@ -43,7 +43,6 @@ const Over = () => {
               <h2 className="text-3xl font-bold mb-4">Tom Kleiberg</h2>
               <p className="text-xl text-primary font-semibold mb-6">Register Taxateur</p>
               <div>
-                <h2 className="text-3xl font-bold mb-6">Onze Expertise</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>TK woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
                   <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze rapportages voldoen aan alle NRVT-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
