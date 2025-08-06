@@ -12,7 +12,7 @@ const Homepage = () => {
     title: "Appartementtaxaties",
     description: "Gevalideerde NWWI-taxatie voor appartementen"
   }];
-  const benefits = ["Gecertificeerd en ervaren taxateur aangesloten bij het NRVT", "Uitgebreide gevalideerde rapporten met NWWI-keurmerk", "Scherpe prijzen en snelle service", "Persoonlijke benadering", "Dekking Veenendaal en omstreken"];
+  const benefits = ["Gecertificeerd en ervaren taxateur aangesloten bij het NRVT", "Uitgebreide gevalideerde rapporten met NWWI-keurmerk", "Scherpe prijzen en snelle service", "Persoonlijke benadering", "Werkgebied Veenendaal en omstreken"];
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-subtle py-20 overflow-hidden">
