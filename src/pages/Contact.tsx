@@ -161,7 +161,8 @@ const Contact = () => {
                     <li>• Wij nemen binnen 24 uur contact met u op</li>
                     <li>• Alle ins en outs worden met u besproken</li>
                     <li>• Bij akkoord plannen wij de inspectie</li>
-                    <li>• Binnen 5 werkdagen ontvangt u het rapport</li>
+                    <li>• Een digitaal taxatie-dossier (taXapi) wordt voor u aangemaakt</li>
+                    <li>• Binnen 5 werkdagen ontvangt u het digitale rapport</li>
                   </ul>
                 </div>
               </CardContent>
