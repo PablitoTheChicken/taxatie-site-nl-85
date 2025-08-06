@@ -11,16 +11,17 @@ const Logo = () => {
     const processLogo = async () => {
       try {
         setIsProcessing(true);
+        setProcessedLogoUrl('/lovable-uploads/7ebb63a0-23be-4ed4-85ff-c96f9b16d69b.png');
         
-        // Load the original logo
-        const logoImage = await loadImageFromUrl('/lovable-uploads/7ebb63a0-23be-4ed4-85ff-c96f9b16d69b.png');
+        // // Load the original logo
+        // const logoImage = await loadImageFromUrl('/lovable-uploads/7ebb63a0-23be-4ed4-85ff-c96f9b16d69b.png');
         
-        // Remove background
-        const processedBlob = await removeBackground(logoImage);
+        // // Remove background
+        // const processedBlob = await removeBackground(logoImage);
         
-        // Create URL for processed image
-        const processedUrl = URL.createObjectURL(processedBlob);
-        setProcessedLogoUrl(processedUrl);
+        // // Create URL for processed image
+        // const processedUrl = URL.createObjectURL(processedBlob);
+        // setProcessedLogoUrl(processedUrl);
         
       } catch (err) {
         console.error('Error processing logo:', err);
