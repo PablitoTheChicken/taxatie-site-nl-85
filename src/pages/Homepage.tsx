@@ -12,10 +12,6 @@ const Homepage = () => {
     title: "Appartementtaxaties",
     description: "Gevalideerde NWWI-taxatie voor appartementen"
   }, {
-    icon: Calculator,
-    title: "Hypotheektaxaties",
-    description: "Taxaties ten behoeve van hypotheekverstrekking"
-  }, {
     icon: Clock,
     title: "Snelle Service",
     description: "Meestal binnen 5 werkdagen een uitgebreid rapport"
