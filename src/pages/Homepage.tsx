@@ -74,7 +74,7 @@ const Homepage = () => {
               </h2>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-accent mr-3" />
+                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
                     <span className="text-foreground">{benefit}</span>
                   </div>)}
               </div>
