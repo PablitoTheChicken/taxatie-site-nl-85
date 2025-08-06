@@ -41,6 +41,36 @@ const Over = () => {
           </p>
         </div>
 
+        {/* Tom Kleiberg Section */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/100c956f-873b-4eb9-a6f6-f733bb173dbb.png" 
+                  alt="Tom Kleiberg - Taxateur"
+                  className="rounded-lg shadow-card-professional w-80 h-96 object-cover"
+                />
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Tom Kleiberg</h2>
+              <p className="text-xl text-primary font-semibold mb-6">Taxateur</p>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  [Hier komt tekst over Tom Kleiberg's achtergrond, ervaring en expertise]
+                </p>
+                <p>
+                  [Aanvullende informatie over zijn kwalificaties en specialisaties]
+                </p>
+                <p>
+                  [Persoonlijke benadering en waarom klanten voor Tom kiezen]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* About Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
