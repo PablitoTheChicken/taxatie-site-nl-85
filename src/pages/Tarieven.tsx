@@ -5,19 +5,19 @@ import { Link } from "react-router-dom";
 const Tarieven = () => {
   const pricingPlans = [{
     name: "Woningtaxatie",
-    price: "€395",
+    price: "€450,-",
     description: "Voor woningen tot €600.000",
-    features: ["Volledige NRVT-conforme taxatie", "Uitgebreid rapport binnen 5 werkdagen", "Foto's en plattegronden", "Marktanalyse van de buurt", "Telefonische toelichting mogelijk"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Uitgebreide marktanalyse", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
     name: "Woningtaxatie Plus",
-    price: "€495",
+    price: "€495,-",
     description: "Voor woningen vanaf €600.000",
-    features: ["Uitgebreide NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Foto's en professionele plattegronden", "Uitgebreide marktanalyse", "Persoonlijke toelichting", "Extra aandacht voor bijzonderheden"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Uitgebreide marktanalyse", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
     name: "Appartementtaxatie",
-    price: "€345",
-    description: "Voor appartementen en condominiums",
-    features: ["Professionele appartementtaxatie", "VvE-gegevens analyse", "Lokatie en voorzieningen beoordeling", "Rapport binnen 5 werkdagen", "Persoonlijke toelichting mogelijk"]
+    price: "€495,-",
+    description: "Voor appartementen",
+    features: ["Professionele appartementtaxatie", "VvE-gegevens analyse", "Lokatie en voorzieningen beoordeling", "Gedetailleerd rapport binnen 7 werkdagen", "Persoonlijke toelichting mogelijk"]
   }];
   const additionalServices = [{
     service: "Taxatie voor en na verbouwing",
