@@ -6,7 +6,7 @@ const Over = () => {
   const qualifications = [{
     icon: Award,
     title: "NRVT Gecertificeerd",
-    description: "Lid van de Nederlandse Register van Vastgoed Taxateurs"
+    description: "Lid van de Nederlandse Raad van Vastgoedtaxateurs"
   }, {
     icon: Users,
     title: "25+ Jaar Ervaring",
@@ -14,7 +14,11 @@ const Over = () => {
   }, {
     icon: Clock,
     title: "Snelle Service",
-    description: "Meestal binnen 5 werkdagen een compleet rapport"
+    description: "Meestal binnen 3-5 werkdagen een compleet rapport"
+  }, {
+    icon: Shield,
+    title: "Verzekerd & Bondig",
+    description: "Volledig verzekerd en aangesloten bij beroepsorganisatie"
   }];
   return <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
@@ -36,49 +40,126 @@ const Over = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-4">Tom Kleiberg</h2>
-              <p className="text-xl text-primary font-semibold mb-6">Register Taxateur</p>
-              <div>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>TK woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
-                  <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze rapportages voldoen aan alle NRVT-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
-                  <p>
-                    Wat ons onderscheidt is onze persoonlijke benadering. Elke taxatie wordt uitgevoerd 
-                    door een ervaren taxateur die de lokale markt goed kent. Wij nemen de tijd voor 
-                    een grondige inspectie en uitgebreide marktanalyse.
-                  </p>
-                </div>
+              <h2 className="text-3xl font-bold mb-4">TK Woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</h2>
+              <p className="text-xl text-primary font-semibold mb-6">Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze gevalideerde rapporten voldoen aan alle NRVT en NWWI-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  [Hier komt tekst over Tom Kleiberg's achtergrond, ervaring en expertise]
+                </p>
+                <p>
+                  [Aanvullende informatie over zijn kwalificaties en specialisaties]
+                </p>
+                <p>
+                  [Persoonlijke benadering en waarom klanten voor Tom kiezen]
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Qualifications Section */}
-        <div className="mb-16">
+        {/* About Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h2 className="text-3xl font-bold mb-6">Onze Expertise</h2>
+            <div className="space-y-4 text-muted-foreground">
+              <p>TK woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
+              <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze rapportages voldoen aan alle NRVT-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
+              <p>
+                Wat ons onderscheidt is onze persoonlijke benadering. Elke taxatie wordt uitgevoerd 
+                door een ervaren taxateur die de lokale markt goed kent. Wij nemen de tijd voor 
+                een grondige inspectie en uitgebreide marktanalyse.
+              </p>
+            </div>
+          </div>
+          
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-center">Onze Kwalificaties</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold">Onze Kwalificaties</h2>
+            <div className="grid grid-cols-1 gap-4">
               {qualifications.map((qual, index) => {
-                const IconComponent = qual.icon;
-                return <Card key={index} className="shadow-card-professional bg-gradient-primary text-white">
-                      <CardContent className="p-6">
-                        <div className="flex items-start">
-                          <div className="p-3 bg-white/20 rounded-full mr-4">
-                            <IconComponent className="h-6 w-6 text-white" />
-                          </div>
-                          <div>
-                            <h3 className="text-lg font-semibold mb-2 text-white">{qual.title}</h3>
-                            <p className="text-white/80">{qual.description}</p>
-                          </div>
+              const IconComponent = qual.icon;
+              return <Card key={index} className="shadow-card-professional">
+                    <CardContent className="p-6">
+                      <div className="flex items-start">
+                        <div className="p-3 bg-primary/10 rounded-full mr-4">
+                          <IconComponent className="h-6 w-6 text-primary" />
                         </div>
-                      </CardContent>
-                    </Card>;
-              })}
+                        <div>
+                          <h3 className="text-lg font-semibold mb-2">{qual.title}</h3>
+                          <p className="text-muted-foreground">{qual.description}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>;
+            })}
             </div>
           </div>
         </div>
 
+        {/* Values Section */}
+        <div className="bg-gradient-subtle rounded-lg p-8 mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Onze Kernwaarden</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-4 text-primary">Betrouwbaarheid</h3>
+              <p className="text-muted-foreground">
+                Wij staan voor transparante communicatie en leveren altijd wat wij beloven.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-4 text-primary">Kwaliteit</h3>
+              <p className="text-muted-foreground">
+                Elke taxatie wordt uitgevoerd volgens de hoogste professionele standaarden.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-4 text-primary">Service</h3>
+              <p className="text-muted-foreground">
+                Persoonlijke aandacht en snelle service staan bij ons centraal.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        {/* Process Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Ons Proces</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {[{
+            step: "1",
+            title: "Contact",
+            desc: "U neemt contact met ons op"
+          }, {
+            step: "2",
+            title: "Afspraak",
+            desc: "Wij plannen een inspectie"
+          }, {
+            step: "3",
+            title: "Taxatie",
+            desc: "Grondige inspectie en analyse"
+          }, {
+            step: "4",
+            title: "Rapport",
+            desc: "Uitgebreid rapport binnen 5 dagen"
+          }].map((item, index) => <div key={index} className="text-center">
+                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  {item.step}
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm">{item.desc}</p>
+              </div>)}
+          </div>
+        </div>
+
+        {/* Contact CTA */}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-4">Klaar om te beginnen?</h2>
+          <p className="text-muted-foreground mb-6">
+            Neem contact met ons op voor een vrijblijvende afspraak.
+          </p>
+          <Button size="lg" className="bg-gradient-primary" asChild>
+            <Link to="/contact">Contact Opnemen</Link>
+          </Button>
+        </div>
       </div>
     </div>;
 };
