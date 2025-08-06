@@ -159,7 +159,7 @@ const Contact = () => {
                   <h3 className="font-semibold mb-2">Wat gebeurt er na uw aanvraag?</h3>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Wij nemen binnen 24 uur contact met u op</li>
-                    <li>• U ontvangt een vrijblijvende afspraak</li>
+                    <li>• Alle ins en outs worden met u besproken</li>
                     <li>• Bij akkoord plannen wij de inspectie</li>
                     <li>• Binnen 5 werkdagen ontvangt u het rapport</li>
                   </ul>
