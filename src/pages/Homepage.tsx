@@ -89,8 +89,8 @@ const Homepage = () => {
                   "Voorafgaand aan de bouw van een nieuwe woning",
                   "Tijdens de bouw van een nieuwe woning"
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0" />
+                  <div key={index} className="flex items-center">
+                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
@@ -117,7 +117,7 @@ const Homepage = () => {
           </div>
           
           {/* Afspraak maken box below */}
-          <div className="mt-12 max-w-md">
+          <div className="mt-12 max-w-md mx-auto">
             <div className="bg-card p-8 rounded-lg shadow-card-professional">
               <h3 className="text-2xl font-semibold text-foreground mb-4">
                 Afspraak maken?
