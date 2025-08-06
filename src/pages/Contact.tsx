@@ -47,7 +47,7 @@ const Contact = () => {
         {/* Background Image */}
         <div className="absolute inset-0 bg-cover bg-no-repeat opacity-30" style={{
         backgroundImage: 'url(/lovable-uploads/c43bdaf2-c84a-4052-8043-ba23c009a9b9.png)',
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center top',
         filter: 'blur(2px)'
       }} />
         {/* Overlay for better text readability */}
