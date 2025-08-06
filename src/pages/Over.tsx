@@ -6,7 +6,7 @@ const Over = () => {
   const qualifications = [{
     icon: Award,
     title: "NRVT Gecertificeerd",
-    description: "Lid van de Nederlandse Raad van Vastgoedtaxateurs"
+    description: "Lid van de Nederlandse Register van Vastgoed Taxateurs"
   }, {
     icon: Users,
     title: "25+ Jaar Ervaring",
@@ -14,11 +14,7 @@ const Over = () => {
   }, {
     icon: Clock,
     title: "Snelle Service",
-    description: "Meestal binnen 3-5 werkdagen een compleet rapport"
-  }, {
-    icon: Shield,
-    title: "Verzekerd & Bondig",
-    description: "Volledig verzekerd en aangesloten bij beroepsorganisatie"
+    description: "Meestal binnen 5 werkdagen een compleet rapport"
   }];
   return <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
