@@ -64,15 +64,15 @@ const Over = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               {qualifications.map((qual, index) => {
                 const IconComponent = qual.icon;
-                return <Card key={index} className="shadow-card-professional">
+                return <Card key={index} className="shadow-card-professional bg-gradient-primary text-white">
                       <CardContent className="p-6">
                         <div className="flex items-start">
-                          <div className="p-3 bg-primary/10 rounded-full mr-4">
-                            <IconComponent className="h-6 w-6 text-primary" />
+                          <div className="p-3 bg-white/20 rounded-full mr-4">
+                            <IconComponent className="h-6 w-6 text-white" />
                           </div>
                           <div>
-                            <h3 className="text-lg font-semibold mb-2">{qual.title}</h3>
-                            <p className="text-muted-foreground">{qual.description}</p>
+                            <h3 className="text-lg font-semibold mb-2 text-white">{qual.title}</h3>
+                            <p className="text-white/80">{qual.description}</p>
                           </div>
                         </div>
                       </CardContent>
