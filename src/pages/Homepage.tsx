@@ -45,7 +45,7 @@ const Homepage = () => {
             <h2 className="text-3xl font-bold text-foreground mb-4">Onze Diensten</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Uw woning of appartement laten taxeren? Wij zijn u graag van dienst!</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center max-w-2xl mx-auto">
             {services.map((service, index) => {
             const IconComponent = service.icon;
             return <Card key={index} className="text-center shadow-card-professional hover:shadow-professional transition-all">
