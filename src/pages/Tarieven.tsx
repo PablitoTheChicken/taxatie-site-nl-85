@@ -7,12 +7,12 @@ const Tarieven = () => {
     name: "Woningtaxatie",
     price: "€450,-",
     description: "Voor woningen tot €600.000",
-    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Uitgebreide marktanalyse", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
     name: "Woningtaxatie Plus",
     price: "€495,-",
     description: "Voor woningen vanaf €600.000",
-    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Uitgebreide marktanalyse", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
     name: "Appartementtaxatie",
     price: "€495,-",
@@ -63,8 +63,8 @@ const Tarieven = () => {
           <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-4 max-w-md w-full">
               {additionalServices.map((item, index) => <div key={index} className="flex justify-between items-center p-4 bg-card rounded-lg">
-                  <span className="font-medium flex-1">{item.service}</span>
-                  <span className="text-primary font-bold text-right ml-4">{item.price}</span>
+                  <span className="font-medium">{item.service}</span>
+                  <span className="text-primary font-bold">{item.price}</span>
                 </div>)}
             </div>
           </div>
