@@ -44,7 +44,7 @@ const Homepage = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
             backgroundImage: 'url(/lovable-uploads/ebc8823f-ccd6-47a7-9240-4bb2f1591c34.png)',
-            filter: 'blur(2px)'
+            filter: 'blur(2px) sepia(20%) hue-rotate(200deg) saturate(120%)'
           }}
         />
         {/* Overlay for better text readability */}
