@@ -78,35 +78,6 @@ const Over = () => {
           </div>
         </div>
 
-        {/* Process Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Ons Proces</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {[{
-            step: "1",
-            title: "Contact",
-            desc: "U neemt contact met ons op"
-          }, {
-            step: "2",
-            title: "Afspraak",
-            desc: "Wij plannen een inspectie"
-          }, {
-            step: "3",
-            title: "Taxatie",
-            desc: "Grondige inspectie en analyse"
-          }, {
-            step: "4",
-            title: "Rapport",
-            desc: "Uitgebreid rapport binnen 5 dagen"
-          }].map((item, index) => <div key={index} className="text-center">
-                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                  {item.step}
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
-              </div>)}
-          </div>
-        </div>
 
       </div>
     </div>;
