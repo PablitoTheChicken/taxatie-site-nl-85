@@ -76,7 +76,7 @@ const Homepage = () => {
               </h2>
               
               <div className="space-y-3">
-                {["Aankoop van een nieuw huis", "Aankoop van nieuw huis voor verhuur", "Verbouwing (en deze financieren vanuit de hypotheek)", "Oversluiting hypotheek en aanvraag renteverlaging", "Scheiding", "Overlijden (voor boedelverdeling)", "Voorafgaand aan de bouw van een nieuwe woning", "Tijdens de bouw van een nieuwe woning"].map((item, index) => <div key={index} className="flex items-center">
+                {["Aankoop van een nieuw huis", "Verbouwing (en deze financieren vanuit de hypotheek)", "Oversluiting hypotheek en aanvraag renteverlaging", "Scheiding", "Overlijden (voor boedelverdeling)", "Voorafgaand aan de bouw van een nieuwe woning", "Tijdens de bouw van een nieuwe woning"].map((item, index) => <div key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
                     <span className="text-foreground">{item}</span>
                   </div>)}
