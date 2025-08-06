@@ -15,8 +15,20 @@ const Tarieven = () => {
         "Foto's en plattegronden",
         "Marktanalyse van de buurt",
         "Telefonische toelichting mogelijk"
-      ],
-      popular: false
+      ]
+    },
+    {
+      name: "Woningtaxatie Plus",
+      price: "€495",
+      description: "Voor woningen vanaf €600.000",
+      features: [
+        "Uitgebreide NRVT-conforme taxatie",
+        "Gedetailleerd rapport binnen 5 werkdagen",
+        "Foto's en professionele plattegronden",
+        "Uitgebreide marktanalyse",
+        "Persoonlijke toelichting",
+        "Extra aandacht voor bijzonderheden"
+      ]
     },
     {
       name: "Appartementtaxatie",
@@ -28,21 +40,7 @@ const Tarieven = () => {
         "Lokatie en voorzieningen beoordeling",
         "Rapport binnen 5 werkdagen",
         "Persoonlijke toelichting mogelijk"
-      ],
-      popular: true
-    },
-    {
-      name: "Hypotheektaxatie",
-      price: "€450",
-      description: "Voor hypotheekverstrekking",
-      features: [
-        "Bancaire taxatie",
-        "Direct aan bank/hypotheekadviseur",
-        "Spoed mogelijk (2 werkdagen)",
-        "Volledige NRVT-waardering",
-        "Garantie van kwaliteit"
-      ],
-      popular: false
+      ]
     }
   ];
 
@@ -71,18 +69,8 @@ const Tarieven = () => {
           {pricingPlans.map((plan, index) => (
             <Card 
               key={index} 
-              className={`relative shadow-card-professional hover:shadow-professional transition-all ${
-                plan.popular ? 'border-accent border-2' : ''
-              }`}
+              className="relative shadow-card-professional hover:shadow-professional transition-all"
             >
-              {plan.popular && (
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-medium flex items-center">
-                    <Star className="h-4 w-4 mr-1" />
-                    Populair
-                  </div>
-                </div>
-              )}
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <div className="text-3xl font-bold text-primary">{plan.price}</div>
@@ -98,7 +86,7 @@ const Tarieven = () => {
                   ))}
                 </ul>
                 <Button 
-                  className={`w-full ${plan.popular ? 'bg-gradient-accent' : 'bg-gradient-primary'}`}
+                  className="w-full bg-gradient-primary"
                   asChild
                 >
                   <Link to="/contact">Offerte Aanvragen</Link>
