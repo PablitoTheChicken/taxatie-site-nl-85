@@ -72,7 +72,7 @@ const Tarieven = () => {
 
         {/* Contact CTA */}
         <div className="text-center mt-16">
-          <h2 className="text-2xl font-bold mb-4">Heeft u vragen over onze tarieven?</h2>
+          <h2 className="text-2xl font-bold mb-4">Heeft u vragen?</h2>
           <p className="text-muted-foreground mb-6">
             Neem contact met ons op voor een persoonlijk advies en afspraak op maat.
           </p>
