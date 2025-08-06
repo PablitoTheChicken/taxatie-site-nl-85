@@ -7,7 +7,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,15 +16,15 @@ const Contact = () => {
     address: "",
     message: ""
   });
-
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real app, this would send the form data to a server
     toast({
       title: "Bericht verzonden!",
-      description: "Wij nemen binnen 24 uur contact met u op.",
+      description: "Wij nemen binnen 24 uur contact met u op."
     });
     setFormData({
       name: "",
@@ -36,13 +35,13 @@ const Contact = () => {
       message: ""
     });
   };
-
   const handleChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
   };
-
-  return (
-    <div className="min-h-screen py-20">
+  return <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -64,7 +63,7 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-primary mr-3" />
                     <h3 className="text-lg font-semibold">Telefoon</h3>
                   </div>
-                  <p className="text-muted-foreground">+31 (0)6 1234 5678</p>
+                  <p className="text-muted-foreground">+31 (0)6 2256 4249</p>
                   <p className="text-sm text-muted-foreground mt-2">
                     Bereikbaar van maandag t/m vrijdag 9:00 - 17:00
                   </p>
@@ -77,7 +76,7 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary mr-3" />
                     <h3 className="text-lg font-semibold">E-mail</h3>
                   </div>
-                  <p className="text-muted-foreground">info@tktaxaties.nl</p>
+                  <p className="text-muted-foreground">tomkleiberg@gmail.com</p>
                   <p className="text-sm text-muted-foreground mt-2">
                     Wij reageren binnen 24 uur
                   </p>
@@ -123,42 +122,22 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Naam *</Label>
-                      <Input
-                        id="name"
-                        type="text"
-                        value={formData.name}
-                        onChange={(e) => handleChange("name", e.target.value)}
-                        required
-                        className="mt-1"
-                      />
+                      <Input id="name" type="text" value={formData.name} onChange={e => handleChange("name", e.target.value)} required className="mt-1" />
                     </div>
                     <div>
                       <Label htmlFor="email">E-mailadres *</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => handleChange("email", e.target.value)}
-                        required
-                        className="mt-1"
-                      />
+                      <Input id="email" type="email" value={formData.email} onChange={e => handleChange("email", e.target.value)} required className="mt-1" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="phone">Telefoonnummer</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleChange("phone", e.target.value)}
-                        className="mt-1"
-                      />
+                      <Input id="phone" type="tel" value={formData.phone} onChange={e => handleChange("phone", e.target.value)} className="mt-1" />
                     </div>
                     <div>
                       <Label htmlFor="serviceType">Type taxatie *</Label>
-                      <Select onValueChange={(value) => handleChange("serviceType", value)}>
+                      <Select onValueChange={value => handleChange("serviceType", value)}>
                         <SelectTrigger className="mt-1">
                           <SelectValue placeholder="Selecteer een optie" />
                         </SelectTrigger>
@@ -174,33 +153,15 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="address">Adres van het object</Label>
-                    <Input
-                      id="address"
-                      type="text"
-                      value={formData.address}
-                      onChange={(e) => handleChange("address", e.target.value)}
-                      placeholder="Straat, huisnummer, postcode, plaats"
-                      className="mt-1"
-                    />
+                    <Input id="address" type="text" value={formData.address} onChange={e => handleChange("address", e.target.value)} placeholder="Straat, huisnummer, postcode, plaats" className="mt-1" />
                   </div>
 
                   <div>
                     <Label htmlFor="message">Aanvullende informatie</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => handleChange("message", e.target.value)}
-                      placeholder="Vertel ons meer over uw situatie..."
-                      className="mt-1"
-                      rows={4}
-                    />
+                    <Textarea id="message" value={formData.message} onChange={e => handleChange("message", e.target.value)} placeholder="Vertel ons meer over uw situatie..." className="mt-1" rows={4} />
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-gradient-primary"
-                    size="lg"
-                  >
+                  <Button type="submit" className="w-full bg-gradient-primary" size="lg">
                     Verstuur Aanvraag
                   </Button>
                 </form>
@@ -219,8 +180,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
