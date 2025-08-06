@@ -41,7 +41,7 @@ const Over = () => {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Tom Kleiberg</h2>
-              <p className="text-xl text-primary font-semibold mb-6">Taxateur</p>
+              <p className="text-xl text-primary font-semibold mb-6">Register </p>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   [Hier komt tekst over Tom Kleiberg's achtergrond, ervaring en expertise]
