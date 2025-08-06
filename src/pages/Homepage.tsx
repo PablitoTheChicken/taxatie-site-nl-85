@@ -48,15 +48,15 @@ const Homepage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center max-w-2xl mx-auto">
             {services.map((service, index) => {
             const IconComponent = service.icon;
-            return <Card key={index} className="text-center shadow-card-professional hover:shadow-professional transition-all">
+            return <Card key={index} className="text-center shadow-card-professional hover:shadow-professional transition-all bg-gradient-primary border-none">
                   <CardHeader>
-                    <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
-                      <IconComponent className="h-6 w-6 text-primary" />
+                    <div className="mx-auto mb-4 p-3 bg-white/20 rounded-full w-fit">
+                      <IconComponent className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className="text-lg">{service.title}</CardTitle>
+                    <CardTitle className="text-lg text-white">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{service.description}</p>
+                    <p className="text-white/90">{service.description}</p>
                   </CardContent>
                 </Card>;
           })}
