@@ -38,8 +38,19 @@ const Homepage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-subtle py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative bg-gradient-subtle py-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{
+            backgroundImage: 'url(/lovable-uploads/ebc8823f-ccd6-47a7-9240-4bb2f1591c34.png)',
+            filter: 'blur(2px)'
+          }}
+        />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-background/60" />
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
             Professionele Taxaties
           </h1>
