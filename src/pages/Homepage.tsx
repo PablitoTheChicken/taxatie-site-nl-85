@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Homepage = () => {
   const services = [{
     icon: Home,
-    title: "Woningtaxaties",
+    title: "Taxatie Woning",
     description: "Gevalideerde NWWI-taxatie voor woningen"
   }, {
     icon: Building,
-    title: "Appartementtaxaties",
+    title: "Taxatie Appartement",
     description: "Gevalideerde NWWI-taxatie voor appartementen"
   }];
   const benefits = ["Gecertificeerd en ervaren taxateur aangesloten bij het NRVT", "Uitgebreide gevalideerde rapporten met NWWI-keurmerk", "Scherpe prijzen en snelle service", "Persoonlijke benadering", "Werkgebied Veenendaal en omstreken"];
