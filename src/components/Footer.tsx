@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, Building2 } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
@@ -25,7 +25,7 @@ const Footer = () => {
                 <span className="text-primary-foreground/80">tomkleiberg@gmail.com</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="h-4 w-4 mr-3" />
+                <Building2 className="h-4 w-4 mr-3" />
                 <span className="text-primary-foreground/80">KVK: 97971375</span>
               </div>
             </div>
