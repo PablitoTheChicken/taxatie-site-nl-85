@@ -46,7 +46,7 @@ const Contact = () => {
       <section className="relative bg-gradient-subtle py-20 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" style={{
-        backgroundImage: 'url(/lovable-uploads/38251533-6560-41e6-8fe5-1dadd197e892.png)',
+        backgroundImage: 'url(/lovable-uploads/c43bdaf2-c84a-4052-8043-ba23c009a9b9.png)',
         filter: 'blur(2px)'
       }} />
         {/* Overlay for better text readability */}
