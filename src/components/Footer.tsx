@@ -1,8 +1,8 @@
 import { Mail, Phone, Building2 } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+      <div className="container mx-auto px-4 py-12 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start justify-items-center text-center md:text-left">
           {/* Company Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">TK Woningtaxaties</h3>
@@ -15,16 +15,16 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
+            <div className="space-y-3 md:flex md:flex-col md:items-start items-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <Phone className="h-4 w-4 mr-3" />
                 <a href="tel:+31622564249" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">+31 (0)6 2256 4249</a>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <Mail className="h-4 w-4 mr-3" />
                 <a href="mailto:tomkleiberg@gmail.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">tomkleiberg@gmail.com</a>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <Building2 className="h-4 w-4 mr-3" />
                 <span className="text-primary-foreground/80">KVK: 97971375</span>
               </div>
