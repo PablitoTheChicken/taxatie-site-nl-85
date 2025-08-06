@@ -147,7 +147,7 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="message">Aanvullende informatie</Label>
-                    <Textarea id="message" value={formData.message} onChange={e => handleChange("message", e.target.value)} placeholder="Vertel ons meer over uw situatie..." className="mt-1" rows={4} />
+                    <Textarea id="message" value={formData.message} onChange={e => handleChange("message", e.target.value)} placeholder="..." className="mt-1" rows={4} />
                   </div>
 
                   <Button type="submit" className="w-full bg-gradient-primary" size="lg">
