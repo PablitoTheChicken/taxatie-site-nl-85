@@ -11,7 +11,7 @@ const Navbar = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Tarieven", href: "/tarieven" },
-    { name: "Over TK Taxaties", href: "/over" },
+    { name: "Over TK Woningtaxaties", href: "/over" },
     { name: "Contact", href: "/contact" },
   ];
 
