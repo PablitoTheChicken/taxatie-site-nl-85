@@ -132,8 +132,8 @@ const Contact = () => {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="woning">Woningtaxatie</SelectItem>
-                          <SelectItem value="appartement">Appartementtaxatie</SelectItem>
                           <SelectItem value="woning">Woningtaxatie + Verbouwing</SelectItem>
+                          <SelectItem value="appartement">Appartementtaxatie</SelectItem>
                           <SelectItem value="appartement">Appartementtaxatie + Verbouwing</SelectItem>
                         </SelectContent>
                       </Select>
