@@ -72,7 +72,7 @@ const Homepage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">
-                Wanneer heb je een taxatierapport nodig?
+                Wanneer is een taxatierapport nodig?
               </h2>
               
               <div className="space-y-3">
