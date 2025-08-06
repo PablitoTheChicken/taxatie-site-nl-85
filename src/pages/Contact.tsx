@@ -65,27 +65,27 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <div className="space-y-6">
-              <Card className="shadow-card-professional">
+              <Card className="shadow-card-professional bg-gradient-primary text-white">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <Phone className="h-5 w-5 text-primary mr-3" />
-                    <h3 className="text-lg font-semibold">Telefoon</h3>
+                    <Phone className="h-5 w-5 text-white mr-3" />
+                    <h3 className="text-lg font-semibold text-white">Telefoon</h3>
                   </div>
-                  <p className="text-muted-foreground">+31 (0)6 2256 4249</p>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <p className="text-white/80">+31 (0)6 2256 4249</p>
+                  <p className="text-sm text-white/60 mt-2">
                     Bereikbaar van maandag t/m vrijdag 9:00 - 17:00
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="shadow-card-professional">
+              <Card className="shadow-card-professional bg-gradient-primary text-white">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <Mail className="h-5 w-5 text-primary mr-3" />
-                    <h3 className="text-lg font-semibold">E-mail</h3>
+                    <Mail className="h-5 w-5 text-white mr-3" />
+                    <h3 className="text-lg font-semibold text-white">E-mail</h3>
                   </div>
-                  <p className="text-muted-foreground">tomkleiberg@gmail.com</p>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <p className="text-white/80">tomkleiberg@gmail.com</p>
+                  <p className="text-sm text-white/60 mt-2">
                     Wij reageren binnen 24 uur
                   </p>
                 </CardContent>
@@ -93,13 +93,13 @@ const Contact = () => {
 
               
 
-              <Card className="shadow-card-professional">
+              <Card className="shadow-card-professional bg-gradient-primary text-white">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <Clock className="h-5 w-5 text-primary mr-3" />
-                    <h3 className="text-lg font-semibold">Openingstijden</h3>
+                    <Clock className="h-5 w-5 text-white mr-3" />
+                    <h3 className="text-lg font-semibold text-white">Openingstijden</h3>
                   </div>
-                  <div className="space-y-1 text-muted-foreground">
+                  <div className="space-y-1 text-white/80">
                     <p>Maandag - Vrijdag: 9:00 - 17:00</p>
                     <p>Weekend: Op afspraak</p>
                   </div>
