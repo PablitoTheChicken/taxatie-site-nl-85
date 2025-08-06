@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -16,24 +17,63 @@ const Contact = () => {
     address: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     toast
   } = useToast();
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send the form data to a server
-    toast({
-      title: "Bericht verzonden!",
-      description: "Wij nemen binnen 24 uur contact met u op."
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      serviceType: "",
-      address: "",
-      message: ""
-    });
+    
+    if (!formData.name || !formData.email || !formData.serviceType) {
+      toast({
+        title: "Vul alle verplichte velden in",
+        description: "Naam, e-mailadres en type taxatie zijn verplicht.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          serviceType: formData.serviceType,
+          address: formData.address,
+          message: formData.message
+        }
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Bericht verzonden!",
+        description: "Wij nemen binnen 24 uur contact met u op. U ontvangt een bevestigingsmail."
+      });
+      
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        serviceType: "",
+        address: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Error sending contact form:', error);
+      toast({
+        title: "Er is een fout opgetreden",
+        description: "Probeer het later opnieuw of neem direct contact met ons op.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   const handleChange = (field: string, value: string) => {
     setFormData(prev => ({
@@ -158,8 +198,8 @@ const Contact = () => {
                     <Textarea id="message" value={formData.message} onChange={e => handleChange("message", e.target.value)} placeholder="" className="mt-1" rows={4} />
                   </div>
 
-                  <Button type="submit" className="w-full bg-gradient-primary" size="lg">
-                    Verstuur Aanvraag
+                  <Button type="submit" className="w-full bg-gradient-primary" size="lg" disabled={isSubmitting}>
+                    {isSubmitting ? "Wordt verzonden..." : "Verstuur Aanvraag"}
                   </Button>
                 </form>
 
