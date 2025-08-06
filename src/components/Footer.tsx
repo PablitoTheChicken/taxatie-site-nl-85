@@ -7,8 +7,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">TK Woningtaxaties</h3>
             <p className="text-primary-foreground/80 mb-4">
-              Professionele taxaties voor woningen en appartementen in Veenendaal en omstreken.
-              Ervaren, betrouwbaar en altijd scherp geprijsd.
+              Professionele taxaties voor woningen en appartementen.
+              KVK nummer: 97971375
             </p>
           </div>
 
