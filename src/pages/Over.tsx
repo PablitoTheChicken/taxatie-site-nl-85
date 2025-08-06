@@ -40,7 +40,7 @@ const Over = () => {
               <p className="text-xl text-primary font-semibold mb-6">Register Taxateur</p>
               <div>
                 <div className="space-y-4 text-muted-foreground">
-                  <p>TK woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
+                  <p>TK Woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
                   <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze gevalideerde rapporten voldoen aan alle NRVT en NWWI-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
                   <p>
                     Wat ons onderscheidt is onze persoonlijke benadering. Elke taxatie wordt uitgevoerd 
