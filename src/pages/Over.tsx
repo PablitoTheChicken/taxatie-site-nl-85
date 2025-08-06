@@ -169,7 +169,7 @@ const Over = () => {
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Klaar om te beginnen?</h2>
           <p className="text-muted-foreground mb-6">
-            Neem contact met ons op voor een vrijblijvende offerte.
+            Neem contact met ons op voor een vrijblijvende afspraak.
           </p>
           <Button size="lg" className="bg-gradient-primary" asChild>
             <Link to="/contact">Contact Opnemen</Link>

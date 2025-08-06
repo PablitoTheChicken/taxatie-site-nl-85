@@ -48,7 +48,7 @@ const Homepage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
             <Button size="lg" className="bg-gradient-primary shadow-professional" asChild>
-              <Link to="/contact">Vraag Offerte Aan</Link>
+              <Link to="/contact">Vraag Afspraak Aan</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link to="/tarieven">Bekijk Tarieven</Link>
@@ -112,10 +112,10 @@ const Homepage = () => {
             <div className="lg:text-center">
               <div className="bg-card p-8 rounded-lg shadow-card-professional">
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Vraag Direct een Offerte
+                  Vraag Direct een Afspraak
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Krijg binnen 24 uur een vrijblijvende offerte op maat.
+                  Krijg binnen 24 uur een vrijblijvende afspraak op maat.
                 </p>
                 <Button size="lg" className="w-full bg-gradient-accent" asChild>
                   <Link to="/contact">Contact Opnemen</Link>

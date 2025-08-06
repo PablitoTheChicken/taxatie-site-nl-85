@@ -50,7 +50,7 @@ const Contact = () => {
             Contact
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Heeft u vragen of wilt u een offerte aanvragen? Neem gerust contact met ons op.
+            Heeft u vragen of wilt u een afspraak maken? Neem gerust contact met ons op.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-card-professional">
               <CardHeader>
-                <CardTitle className="text-2xl">Vraag Offerte Aan</CardTitle>
+                <CardTitle className="text-2xl">Vraag Afspraak Aan</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -209,7 +209,7 @@ const Contact = () => {
                   <h3 className="font-semibold mb-2">Wat gebeurt er na uw aanvraag?</h3>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Wij nemen binnen 24 uur contact met u op</li>
-                    <li>• U ontvangt een vrijblijvende offerte</li>
+                    <li>• U ontvangt een vrijblijvende afspraak</li>
                     <li>• Bij akkoord plannen wij de inspectie</li>
                     <li>• Binnen 5 werkdagen ontvangt u het rapport</li>
                   </ul>

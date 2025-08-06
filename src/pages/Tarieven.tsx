@@ -89,7 +89,7 @@ const Tarieven = () => {
                   className="w-full bg-gradient-primary"
                   asChild
                 >
-                  <Link to="/contact">Offerte Aanvragen</Link>
+                  <Link to="/contact">Afspraak Maken</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -113,7 +113,7 @@ const Tarieven = () => {
         <div className="text-center mt-16">
           <h2 className="text-2xl font-bold mb-4">Heeft u vragen over onze tarieven?</h2>
           <p className="text-muted-foreground mb-6">
-            Neem contact met ons op voor een persoonlijk advies en offerte op maat.
+            Neem contact met ons op voor een persoonlijk advies en afspraak op maat.
           </p>
           <Button size="lg" className="bg-gradient-primary" asChild>
             <Link to="/contact">Contact Opnemen</Link>
