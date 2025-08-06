@@ -41,7 +41,7 @@ const Homepage = () => {
       <section className="relative bg-gradient-subtle py-20 overflow-hidden">
         {/* Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: 'url(/lovable-uploads/ebc8823f-ccd6-47a7-9240-4bb2f1591c34.png)',
             filter: 'blur(2px) sepia(20%) hue-rotate(200deg) saturate(120%)'
@@ -59,7 +59,7 @@ const Homepage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
             <Button size="lg" className="bg-gradient-primary shadow-professional" asChild>
-              <Link to="/contact">Vraag Afspraak Aan</Link>
+              <Link to="/contact">Afspraak Maken</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link to="/tarieven">Bekijk Tarieven</Link>
