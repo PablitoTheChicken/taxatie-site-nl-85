@@ -69,16 +69,44 @@ const Homepage = () => {
       {/* Benefits Section */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 className="text-3xl font-bold text-foreground mb-6">
+                Wanneer heb je een taxatierapport nodig?
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Een taxatierapport kan in de volgende gevallen noodzakelijk zijn:
+              </p>
+              <div className="space-y-3">
+                {[
+                  "Aankoop van een nieuw huis",
+                  "Aankoop van nieuw huis voor verhuur", 
+                  "Verbouwing (en deze financieren vanuit de hypotheek)",
+                  "Oversluiting hypotheek",
+                  "Aanvraag renteverlaging",
+                  "Scheiding",
+                  "Overlijden (voor boedelverdeling)",
+                  "Voorafgaand aan de bouw van een nieuwe woning",
+                  "Tijdens de bouw van een nieuwe woning"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0" />
+                    <span className="text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">
                 Waarom kiezen voor TK Woningtaxaties?
               </h2>
               <div className="space-y-4">
-                {benefits.map((benefit, index) => <div key={index} className="flex items-center">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
                     <span className="text-foreground">{benefit}</span>
-                  </div>)}
+                  </div>
+                ))}
               </div>
               <div className="mt-8">
                 <Button className="bg-gradient-primary" asChild>
@@ -86,18 +114,20 @@ const Homepage = () => {
                 </Button>
               </div>
             </div>
-            <div className="lg:text-center">
-              <div className="bg-card p-8 rounded-lg shadow-card-professional">
-                <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Afspraak maken?
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  Krijg binnen 24 uur een vrijblijvende afspraak op maat.
-                </p>
-                <Button size="lg" className="w-full bg-gradient-primary" asChild>
-                  <Link to="/contact">Contact Opnemen</Link>
-                </Button>
-              </div>
+          </div>
+          
+          {/* Afspraak maken box below */}
+          <div className="mt-12 max-w-md">
+            <div className="bg-card p-8 rounded-lg shadow-card-professional">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">
+                Afspraak maken?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Krijg binnen 24 uur een vrijblijvende afspraak op maat.
+              </p>
+              <Button size="lg" className="w-full bg-gradient-primary" asChild>
+                <Link to="/contact">Contact Opnemen</Link>
+              </Button>
             </div>
           </div>
         </div>
