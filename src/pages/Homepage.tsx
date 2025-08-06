@@ -48,7 +48,7 @@ const Homepage = () => {
           }}
         />
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-background/60" />
+        <div className="absolute inset-0 bg-black/60" />
         
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
