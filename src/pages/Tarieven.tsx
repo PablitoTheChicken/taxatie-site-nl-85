@@ -4,17 +4,17 @@ import { Check, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 const Tarieven = () => {
   const pricingPlans = [{
-    name: "Woningtaxatie",
+    name: "Taxatie Woning",
     price: "€450,-",
     description: "Voor woningen tot €600.000",
     features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
-    name: "Woningtaxatie Plus",
+    name: "Taxatie Woning Plus",
     price: "€495,-",
     description: "Voor woningen vanaf €600.000",
     features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
-    name: "Appartementtaxatie",
+    name: "Taxatie Appartement",
     price: "€495,-",
     description: "Voor appartementen",
     features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 7 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "VvE-gegevens analyse"]
