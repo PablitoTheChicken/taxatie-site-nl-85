@@ -41,17 +41,24 @@ const Contact = () => {
       [field]: value
     }));
   };
-  return <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Contact
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Heeft u vragen of wilt u een afspraak maken? Neem gerust contact met ons op.
-          </p>
+  return <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-subtle py-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" style={{
+        backgroundImage: 'url(/lovable-uploads/38251533-6560-41e6-8fe5-1dadd197e892.png)',
+        filter: 'blur(2px)'
+      }} />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 absolute bg-black/40" />
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-4xl text-white mb-6 animate-fade-in font-bold md:text-6xl">Contact</h1>
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto animate-slide-up">Heeft u vragen of wilt u een afspraak maken? Neem gerust contact met ons op voor een vrijblijvende afspraak.</p>
         </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-16">
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Information */}
