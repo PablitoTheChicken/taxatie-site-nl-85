@@ -141,7 +141,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="address">Adres van het object</Label>
+                    <Label htmlFor="address">Adres van het te taxeren object</Label>
                     <Input id="address" type="text" value={formData.address} onChange={e => handleChange("address", e.target.value)} placeholder="Straat, huisnummer, postcode, plaats" className="mt-1" />
                   </div>
 
