@@ -42,55 +42,43 @@ const Over = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Tom Kleiberg</h2>
               <p className="text-xl text-primary font-semibold mb-6">Register Taxateur</p>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  [Hier komt tekst over Tom Kleiberg's achtergrond, ervaring en expertise]
-                </p>
-                <p>
-                  [Aanvullende informatie over zijn kwalificaties en specialisaties]
-                </p>
-                <p>
-                  [Persoonlijke benadering en waarom klanten voor Tom kiezen]
-                </p>
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Onze Expertise</h2>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>TK woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
+                  <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze rapportages voldoen aan alle NRVT-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
+                  <p>
+                    Wat ons onderscheidt is onze persoonlijke benadering. Elke taxatie wordt uitgevoerd 
+                    door een ervaren taxateur die de lokale markt goed kent. Wij nemen de tijd voor 
+                    een grondige inspectie en uitgebreide marktanalyse.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* About Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div>
-            <h2 className="text-3xl font-bold mb-6">Onze Expertise</h2>
-            <div className="space-y-4 text-muted-foreground">
-              <p>TK woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
-              <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze rapportages voldoen aan alle NRVT-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
-              <p>
-                Wat ons onderscheidt is onze persoonlijke benadering. Elke taxatie wordt uitgevoerd 
-                door een ervaren taxateur die de lokale markt goed kent. Wij nemen de tijd voor 
-                een grondige inspectie en uitgebreide marktanalyse.
-              </p>
-            </div>
-          </div>
-          
+        {/* Qualifications Section */}
+        <div className="mb-16">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Onze Kwalificaties</h2>
-            <div className="grid grid-cols-1 gap-4">
+            <h2 className="text-3xl font-bold text-center">Onze Kwalificaties</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               {qualifications.map((qual, index) => {
-              const IconComponent = qual.icon;
-              return <Card key={index} className="shadow-card-professional">
-                    <CardContent className="p-6">
-                      <div className="flex items-start">
-                        <div className="p-3 bg-primary/10 rounded-full mr-4">
-                          <IconComponent className="h-6 w-6 text-primary" />
+                const IconComponent = qual.icon;
+                return <Card key={index} className="shadow-card-professional">
+                      <CardContent className="p-6">
+                        <div className="flex items-start">
+                          <div className="p-3 bg-primary/10 rounded-full mr-4">
+                            <IconComponent className="h-6 w-6 text-primary" />
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-semibold mb-2">{qual.title}</h3>
+                            <p className="text-muted-foreground">{qual.description}</p>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="text-lg font-semibold mb-2">{qual.title}</h3>
-                          <p className="text-muted-foreground">{qual.description}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>;
-            })}
+                      </CardContent>
+                    </Card>;
+              })}
             </div>
           </div>
         </div>
