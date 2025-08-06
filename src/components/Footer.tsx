@@ -2,7 +2,7 @@ import { Mail, Phone, Building2 } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">TK Woningtaxaties</h3>
@@ -40,6 +40,23 @@ const Footer = () => {
               
               
             </ul>
+          </div>
+
+          {/* Logos */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Kwalificaties</h3>
+            <div className="space-y-4">
+              <img 
+                src="/lovable-uploads/90e35350-5b94-4cd4-81ce-b31097734afd.png" 
+                alt="NWWI" 
+                className="h-8 w-auto"
+              />
+              <img 
+                src="/lovable-uploads/aaf67aea-f3fb-487a-859e-cbdb6de05a4c.png" 
+                alt="Register Taxateur" 
+                className="h-12 w-auto"
+              />
+            </div>
           </div>
         </div>
 
