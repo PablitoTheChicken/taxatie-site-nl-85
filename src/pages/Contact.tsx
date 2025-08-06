@@ -111,7 +111,7 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-white mr-3" />
                     <h3 className="text-lg font-semibold text-white">Telefoon</h3>
                   </div>
-                  <p className="text-white/80">+31 (0)6 2256 4249</p>
+                  <a href="tel:+31622564249" className="text-white/80">+31 (0)6 2256 4249</a>
                   <p className="text-sm text-white/60 mt-2">
                     Bereikbaar van maandag t/m vrijdag 9:00 - 17:00
                   </p>
