@@ -2,61 +2,39 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Home, Building, Calculator, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Homepage = () => {
-  const services = [
-    {
-      icon: Home,
-      title: "Woningtaxaties",
-      description: "Professionele taxaties voor woningen en eengezinshuizen"
-    },
-    {
-      icon: Building,
-      title: "Appartementtaxaties",
-      description: "Waardebepaling van appartementen en condominiums"
-    },
-    {
-      icon: Calculator,
-      title: "Hypotheektaxaties",
-      description: "Taxaties ten behoeve van hypotheekverstrekking"
-    },
-    {
-      icon: Clock,
-      title: "Snelle Service",
-      description: "Meestal binnen 3-5 werkdagen een uitgebreid rapport"
-    }
-  ];
-
-  const benefits = [
-    "Gecertificeerd en ervaren taxateur",
-    "Uitgebreide rapporten volgens NRVT-normen",
-    "Scherpe prijzen en snelle service",
-    "Persoonlijke benadering",
-    "Dekking Veenendaal en omstreken"
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const services = [{
+    icon: Home,
+    title: "Woningtaxaties",
+    description: "Professionele taxaties voor woningen en eengezinshuizen"
+  }, {
+    icon: Building,
+    title: "Appartementtaxaties",
+    description: "Waardebepaling van appartementen en condominiums"
+  }, {
+    icon: Calculator,
+    title: "Hypotheektaxaties",
+    description: "Taxaties ten behoeve van hypotheekverstrekking"
+  }, {
+    icon: Clock,
+    title: "Snelle Service",
+    description: "Meestal binnen 3-5 werkdagen een uitgebreid rapport"
+  }];
+  const benefits = ["Gecertificeerd en ervaren taxateur", "Uitgebreide rapporten volgens NRVT-normen", "Scherpe prijzen en snelle service", "Persoonlijke benadering", "Dekking Veenendaal en omstreken"];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-subtle py-20 overflow-hidden">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-          style={{
-            backgroundImage: 'url(/lovable-uploads/59ca03f7-2d29-4513-8428-4744e6784988.png)',
-            filter: 'blur(2px)'
-          }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" style={{
+        backgroundImage: 'url(/lovable-uploads/59ca03f7-2d29-4513-8428-4744e6784988.png)',
+        filter: 'blur(2px)'
+      }} />
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 absolute bg-black/40" />
         
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-            Professionele Taxaties
-          </h1>
-          <p className="text-xl text-white mb-8 max-w-2xl mx-auto animate-slide-up">
-            TK Taxaties biedt betrouwbare en professionele taxatiediensten voor woningen en appartementen in Veenendaal en omstreken.
-          </p>
+          <h1 className="text-4xl text-white mb-6 animate-fade-in font-bold md:text-6xl">Professionele Taxaties</h1>
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto animate-slide-up">TK woningtaxaties biedt betrouwbare en professionele taxatiediensten voor woningen en appartementen in Veenendaal en omstreken.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
             <Button size="lg" className="bg-gradient-primary shadow-professional" asChild>
               <Link to="/contact">Afspraak Maken</Link>
@@ -73,15 +51,12 @@ const Homepage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Onze Diensten</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Wij bieden een breed scala aan taxatiediensten voor particulieren en bedrijven.
-            </p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Wij bieden een breed scala aan taxatiediensten.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <Card key={index} className="text-center shadow-card-professional hover:shadow-professional transition-all">
+            const IconComponent = service.icon;
+            return <Card key={index} className="text-center shadow-card-professional hover:shadow-professional transition-all">
                   <CardHeader>
                     <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
                       <IconComponent className="h-6 w-6 text-primary" />
@@ -91,9 +66,8 @@ const Homepage = () => {
                   <CardContent>
                     <p className="text-muted-foreground">{service.description}</p>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -107,12 +81,10 @@ const Homepage = () => {
                 Waarom Kiezen voor TK Taxaties?
               </h2>
               <div className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center">
+                {benefits.map((benefit, index) => <div key={index} className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-accent mr-3" />
                     <span className="text-foreground">{benefit}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               <div className="mt-8">
                 <Button className="bg-gradient-primary" asChild>
@@ -136,8 +108,6 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Homepage;
