@@ -48,7 +48,8 @@ const Homepage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center max-w-2xl mx-auto">
             {services.map((service, index) => {
             const IconComponent = service.icon;
-            return <Card key={index} className="text-center shadow-card-professional hover:shadow-professional transition-all bg-gradient-primary border-none h-full flex flex-col">
+            return <Link key={index} to="/tarieven" className="block">
+                <Card className="text-center shadow-card-professional hover:shadow-professional transition-all bg-gradient-primary border-none h-full flex flex-col cursor-pointer hover:scale-105">
                   <CardHeader className="flex-shrink-0">
                     <div className="mx-auto mb-4 p-3 bg-white/20 rounded-full w-fit">
                       <IconComponent className="h-6 w-6 text-white" />
@@ -58,7 +59,8 @@ const Homepage = () => {
                   <CardContent className="flex-grow flex items-center">
                     <p className="text-white/90">{service.description}</p>
                   </CardContent>
-                </Card>;
+                </Card>
+              </Link>;
           })}
           </div>
         </div>
