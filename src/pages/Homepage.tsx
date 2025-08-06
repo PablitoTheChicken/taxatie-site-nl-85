@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Homepage = () => {
   const services = [{
     icon: Home,
-    title: "Taxatie Woning",
+    title: "Woningtaxaties",
     description: "Gevalideerde NWWI-taxatie voor woningen"
   }, {
     icon: Building,
-    title: "Taxatie Appartement",
+    title: "Appartementtaxaties",
     description: "Gevalideerde NWWI-taxatie voor appartementen"
   }];
   const benefits = ["Gecertificeerd en ervaren taxateur aangesloten bij het NRVT", "Uitgebreide gevalideerde rapporten met NWWI-keurmerk", "Scherpe prijzen en snelle service", "Persoonlijke benadering", "Werkgebied Veenendaal en omstreken"];
@@ -69,64 +69,26 @@ const Homepage = () => {
       {/* Benefits Section */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
-                Wanneer heb je een taxatierapport nodig?
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                Een taxatierapport kan in de volgende gevallen noodzakelijk zijn:
-              </p>
-              <div className="space-y-3">
-                {[
-                  "Aankoop van een nieuw huis",
-                  "Aankoop van nieuw huis voor verhuur", 
-                  "Verbouwing (en deze financieren vanuit de hypotheek)",
-                  "Oversluiting hypotheek en aanvraag renteverlaging",
-                  "Scheiding",
-                  "Overlijden (voor boedelverdeling)",
-                  "Voorafgaand aan de bouw van een nieuwe woning",
-                  "Tijdens de bouw van een nieuwe woning"
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
-                    <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
-                Waarom kiezen voor TK Woningtaxaties?
-              </h2>
-              <div className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 flex-shrink-0" />
-                    <span className="text-foreground">{benefit}</span>
-                  </div>
-                ))}
-              </div>
+              <h2 className="text-3xl font-bold text-foreground mb-6">Wanneer is een taxatierapport nodig?</h2>
+              
               <div className="mt-8">
                 <Button className="bg-gradient-primary" asChild>
                   <Link to="/over">Meer Over Ons</Link>
                 </Button>
               </div>
             </div>
-          </div>
-          
-          {/* Afspraak maken box below */}
-          <div className="mt-12 max-w-md mx-auto">
-            <div className="bg-card p-8 rounded-lg shadow-card-professional">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                Afspraak maken?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Krijg binnen 24 uur een vrijblijvende afspraak op maat.
-              </p>
-              <Button size="lg" className="w-full bg-gradient-primary" asChild>
-                <Link to="/contact">Contact Opnemen</Link>
-              </Button>
+            <div className="lg:text-center">
+              <div className="bg-card p-8 rounded-lg shadow-card-professional">
+                <h3 className="text-2xl font-semibold text-foreground mb-4">
+                  Afspraak maken?
+                </h3>
+                <p className="text-muted-foreground mb-6">Tijdens de bouw van een nieuwe woning</p>
+                <Button size="lg" className="w-full bg-gradient-primary" asChild>
+                  <Link to="/contact">Contact Opnemen</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
