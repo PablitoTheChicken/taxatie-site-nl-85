@@ -62,9 +62,9 @@ const Tarieven = () => {
           <h2 className="text-2xl font-bold text-center mb-8">Extra Diensten</h2>
           <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-4 max-w-md w-full">
-              {additionalServices.map((item, index) => <div key={index} className="flex justify-between items-center p-4 bg-primary/10 border border-primary/20 rounded-lg">
-                  <span className="font-medium text-primary">{item.service}</span>
-                  <span className="text-primary font-bold">{item.price}</span>
+              {additionalServices.map((item, index) => <div key={index} className="flex justify-between items-center p-4 bg-gradient-primary text-white rounded-lg">
+                  <span className="font-medium">{item.service}</span>
+                  <span className="font-bold">{item.price}</span>
                 </div>)}
             </div>
           </div>
