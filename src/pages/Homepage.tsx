@@ -11,10 +11,6 @@ const Homepage = () => {
     icon: Building,
     title: "Appartementtaxaties",
     description: "Gevalideerde NWWI-taxatie voor appartementen"
-  }, {
-    icon: Clock,
-    title: "Snelle Service",
-    description: "Meestal binnen 5 werkdagen een uitgebreid rapport"
   }];
   const benefits = ["Gecertificeerd en ervaren taxateur", "Uitgebreide rapporten volgens NRVT-normen", "Scherpe prijzen en snelle service", "Persoonlijke benadering", "Dekking Veenendaal en omstreken"];
   return <div className="min-h-screen">
