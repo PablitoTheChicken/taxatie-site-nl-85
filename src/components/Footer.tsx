@@ -52,7 +52,7 @@ const Footer = () => {
                 className="h-8 w-auto"
               />
               <img 
-                src="/lovable-uploads/aaf67aea-f3fb-487a-859e-cbdb6de05a4c.png" 
+                src="/lovable-uploads/3b42757c-7197-4f98-8e39-7fb00e37c933.png" 
                 alt="Register Taxateur" 
                 className="h-12 w-auto"
               />
