@@ -83,18 +83,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-card-professional">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <MapPin className="h-5 w-5 text-primary mr-3" />
-                    <h3 className="text-lg font-semibold">KVK Nummer</h3>
-                  </div>
-                  <p className="text-muted-foreground">97971375</p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Kamer van Koophandel registratie
-                  </p>
-                </CardContent>
-              </Card>
+              
 
               <Card className="shadow-card-professional">
                 <CardContent className="p-6">
