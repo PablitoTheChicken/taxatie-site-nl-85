@@ -17,7 +17,7 @@ const Tarieven = () => {
     name: "Appartementtaxatie",
     price: "€495,-",
     description: "Voor appartementen",
-    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 7 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden", "VvE-gegevens analyse"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 7 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "VvE-gegevens analyse"]
   }];
   const additionalServices = [{
     service: "Taxatie voor en na verbouwing",
