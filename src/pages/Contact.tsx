@@ -48,7 +48,7 @@ const Contact = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Contact
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Heeft u vragen of wilt u een afspraak maken? Neem gerust contact met ons op.
           </p>
         </div>
@@ -104,7 +104,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-card-professional">
               <CardHeader>
-                <CardTitle className="text-2xl">Afspraak maken?</CardTitle>
+                <CardTitle className="text-2xl">Taxatie afspraak maken?</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
