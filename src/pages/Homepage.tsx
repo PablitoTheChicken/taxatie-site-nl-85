@@ -70,7 +70,7 @@ const Homepage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">
-                Waarom Kiezen voor TK Taxaties?
+                Waarom kiezen voor TK Woningtaxaties?
               </h2>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => <div key={index} className="flex items-center">
