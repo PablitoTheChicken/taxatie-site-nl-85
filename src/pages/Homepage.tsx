@@ -87,7 +87,7 @@ const Homepage = () => {
             <div className="lg:text-center">
               <div className="bg-card p-8 rounded-lg shadow-card-professional">
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Vraag Direct een Afspraak
+                  Afspraak maken?
                 </h3>
                 <p className="text-muted-foreground mb-6">
                   Krijg binnen 24 uur een vrijblijvende afspraak op maat.
