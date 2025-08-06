@@ -6,11 +6,11 @@ const Homepage = () => {
   const services = [{
     icon: Home,
     title: "Woningtaxaties",
-    description: "Professionele taxaties voor woningen en eengezinshuizen"
+    description: "Gevalideerde NWWI-taxatie voor woningen"
   }, {
     icon: Building,
     title: "Appartementtaxaties",
-    description: "Waardebepaling van appartementen en condominiums"
+    description: "Gevalideerde NWWI-taxatie voor appartementen"
   }, {
     icon: Calculator,
     title: "Hypotheektaxaties",
@@ -18,7 +18,7 @@ const Homepage = () => {
   }, {
     icon: Clock,
     title: "Snelle Service",
-    description: "Meestal binnen 3-5 werkdagen een uitgebreid rapport"
+    description: "Meestal binnen 5 werkdagen een uitgebreid rapport"
   }];
   const benefits = ["Gecertificeerd en ervaren taxateur", "Uitgebreide rapporten volgens NRVT-normen", "Scherpe prijzen en snelle service", "Persoonlijke benadering", "Dekking Veenendaal en omstreken"];
   return <div className="min-h-screen">
