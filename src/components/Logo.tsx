@@ -13,7 +13,7 @@ const Logo = () => {
         setIsProcessing(true);
         
         // Load the original logo
-        const logoImage = await loadImageFromUrl('/lovable-uploads/f9da7390-345b-4d62-ad30-ab7883946be3.png');
+        const logoImage = await loadImageFromUrl('/lovable-uploads/7ebb63a0-23be-4ed4-85ff-c96f9b16d69b.png');
         
         // Remove background
         const processedBlob = await removeBackground(logoImage);
@@ -26,7 +26,7 @@ const Logo = () => {
         console.error('Error processing logo:', err);
         setError('Failed to process logo');
         // Fallback to original logo
-        setProcessedLogoUrl('/lovable-uploads/f9da7390-345b-4d62-ad30-ab7883946be3.png');
+        setProcessedLogoUrl('/lovable-uploads/7ebb63a0-23be-4ed4-85ff-c96f9b16d69b.png');
       } finally {
         setIsProcessing(false);
       }
@@ -65,7 +65,7 @@ const Logo = () => {
   return (
     <Link to="/" className="flex-shrink-0 flex items-center">
       <img 
-        src={processedLogoUrl || '/lovable-uploads/f9da7390-345b-4d62-ad30-ab7883946be3.png'}
+        src={processedLogoUrl || '/lovable-uploads/7ebb63a0-23be-4ed4-85ff-c96f9b16d69b.png'}
         alt="TK Taxaties Logo" 
         className="h-12 w-auto object-contain"
         style={{ maxWidth: '140px' }}
