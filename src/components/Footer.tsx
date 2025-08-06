@@ -18,11 +18,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-3" />
-                <span className="text-primary-foreground/80">+31 (0)6 2256 4249</span>
+                <a href="tel:+31622564249" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">+31 (0)6 2256 4249</a>
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-3" />
-                <span className="text-primary-foreground/80">tomkleiberg@gmail.com</span>
+                <a href="mailto:tomkleiberg@gmail.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">tomkleiberg@gmail.com</a>
               </div>
               <div className="flex items-center">
                 <Building2 className="h-4 w-4 mr-3" />
