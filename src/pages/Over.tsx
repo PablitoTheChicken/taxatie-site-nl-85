@@ -9,7 +9,7 @@ const Over = () => {
     description: "Lid van de Nederlandse Raad van Vastgoedtaxateurs"
   }, {
     icon: Users,
-    title: "15+ Jaar Ervaring",
+    title: "25+ Jaar Ervaring",
     description: "Ruime ervaring in verschillende marktsegmenten"
   }, {
     icon: Clock,
