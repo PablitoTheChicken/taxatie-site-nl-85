@@ -57,7 +57,7 @@ const Over = () => {
         <div className="mb-16">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-center">Onze Kwalificaties</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {qualifications.map((qual, index) => {
                 const IconComponent = qual.icon;
                 return <Card key={index} className="shadow-card-professional bg-gradient-primary text-white">
