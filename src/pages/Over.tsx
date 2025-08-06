@@ -36,12 +36,12 @@ const Over = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <div className="relative">
-                <img src="/lovable-uploads/100c956f-873b-4eb9-a6f6-f733bb173dbb.png" alt="Tom Kleiberg - Taxateur" className="rounded-lg shadow-card-professional w-80 h-96 object-cover" />
+                <img src="/lovable-uploads/100c956f-873b-4eb9-a6f6-f733bb173dbb.png" alt="Tom Kleiberg - Register Taxateur" className="rounded-lg shadow-card-professional w-80 h-96 object-cover" />
               </div>
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Tom Kleiberg</h2>
-              <p className="text-xl text-primary font-semibold mb-6">Register </p>
+              <p className="text-xl text-primary font-semibold mb-6">Register Taxateur</p>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   [Hier komt tekst over Tom Kleiberg's achtergrond, ervaring en expertise]
