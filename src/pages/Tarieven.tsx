@@ -63,8 +63,8 @@ const Tarieven = () => {
           <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-4 max-w-md w-full">
               {additionalServices.map((item, index) => <div key={index} className="flex justify-between items-center p-4 bg-card rounded-lg">
-                  <span className="font-medium">{item.service}</span>
-                  <span className="text-primary font-bold">{item.price}</span>
+                  <span className="font-medium flex-1">{item.service}</span>
+                  <span className="text-primary font-bold text-right ml-4">{item.price}</span>
                 </div>)}
             </div>
           </div>
