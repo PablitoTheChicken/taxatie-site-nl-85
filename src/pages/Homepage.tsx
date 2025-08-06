@@ -43,7 +43,7 @@ const Homepage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: 'url(/lovable-uploads/ebc8823f-ccd6-47a7-9240-4bb2f1591c34.png)',
+            backgroundImage: 'url(/lovable-uploads/59ca03f7-2d29-4513-8428-4744e6784988.png)',
             filter: 'blur(2px)'
           }}
         />
@@ -51,10 +51,10 @@ const Homepage = () => {
         <div className="absolute inset-0 bg-background/60" />
         
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             Professionele Taxaties
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto animate-slide-up">
             TK Taxaties biedt betrouwbare en professionele taxatiediensten voor woningen en appartementen in Veenendaal en omstreken.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
