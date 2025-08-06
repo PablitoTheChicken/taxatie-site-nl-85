@@ -45,17 +45,21 @@ const Footer = () => {
           {/* Logos */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Kwalificaties</h3>
-            <div className="space-y-4">
-              <img 
-                src="/lovable-uploads/90e35350-5b94-4cd4-81ce-b31097734afd.png" 
-                alt="NWWI" 
-                className="h-8 w-auto"
-              />
-              <img 
-                src="/lovable-uploads/3b42757c-7197-4f98-8e39-7fb00e37c933.png" 
-                alt="Register Taxateur" 
-                className="h-12 w-auto"
-              />
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-4">
+              <div className="bg-white rounded p-2 w-fit">
+                <img 
+                  src="/lovable-uploads/90e35350-5b94-4cd4-81ce-b31097734afd.png" 
+                  alt="NWWI" 
+                  className="h-8 w-auto"
+                />
+              </div>
+              <div className="bg-white rounded p-2 w-fit">
+                <img 
+                  src="/lovable-uploads/3b42757c-7197-4f98-8e39-7fb00e37c933.png" 
+                  alt="Register Taxateur" 
+                  className="h-12 w-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
