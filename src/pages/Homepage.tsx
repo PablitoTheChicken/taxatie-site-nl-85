@@ -94,7 +94,7 @@ const Homepage = () => {
                 <p className="text-muted-foreground mb-6">
                   Krijg binnen 24 uur een vrijblijvende afspraak op maat.
                 </p>
-                <Button size="lg" className="w-full bg-gradient-accent" asChild>
+                <Button size="lg" className="w-full bg-gradient-primary" asChild>
                   <Link to="/contact">Contact Opnemen</Link>
                 </Button>
               </div>
