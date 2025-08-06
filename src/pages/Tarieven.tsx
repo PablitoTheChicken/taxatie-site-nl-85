@@ -21,7 +21,7 @@ const Tarieven = () => {
   }];
   const additionalServices = [{
     service: "Taxatie voor en na verbouwing",
-    price: "€50,-"
+    price: "+€50,-"
   }];
   return <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
