@@ -7,17 +7,17 @@ const Tarieven = () => {
     name: "Woningtaxatie",
     price: "€450,-",
     description: "Voor woningen tot €600.000",
-    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Uitgebreide marktanalyse", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
     name: "Woningtaxatie Plus",
     price: "€495,-",
     description: "Voor woningen vanaf €600.000",
-    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Uitgebreide marktanalyse", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
     name: "Appartementtaxatie",
     price: "€495,-",
     description: "Voor appartementen",
-    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 5 werkdagen", "Uitgebreide marktanalyse", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden", "VvE-gegevens analyse"]
+    features: ["Volledige NRVT-conforme taxatie", "Gedetailleerd rapport binnen 7 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden", "VvE-gegevens analyse"]
   }];
   const additionalServices = [{
     service: "Taxatie voor en na verbouwing",
