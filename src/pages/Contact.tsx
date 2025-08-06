@@ -104,7 +104,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-card-professional">
               <CardHeader>
-                <CardTitle className="text-2xl">Vraag Afspraak Aan</CardTitle>
+                <CardTitle className="text-2xl">Afspraak maken?</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
