@@ -42,10 +42,8 @@ const Over = () => {
                 <div className="space-y-4 text-muted-foreground">
                   <p>TK Woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
                   <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze gevalideerde rapporten voldoen aan alle NRVT en NWWI-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
-                  <p>Wat ons onderscheidt is onze persoonlijke benadering en korte lijnen. Elke taxatie wordt uitgevoerd door een ervaren taxateur die de lokale en regionale markt goed kent. Wij nemen de tijd voor een grondige inspectie en uitgebreide marktanalyse.
-
-
-Heeft u vragen? Neemt u dan contact met mij op via email of via +31 (0)6 2256 4249</p>
+                  <p>Wat ons onderscheidt is onze persoonlijke benadering en korte lijnen. Elke taxatie wordt uitgevoerd door een ervaren taxateur die de lokale en regionale markt goed kent. Wij nemen de tijd voor een grondige inspectie en uitgebreide marktanalyse.</p>
+                  <p>Heeft u vragen? Neemt u dan contact met mij op via email of via +31 (0)6 2256 4249</p>
                 </div>
               </div>
             </div>
