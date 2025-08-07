@@ -138,7 +138,7 @@ const Contact = () => {
                   </div>
                   <div className="space-y-1 text-white/80">
                     <p>Maandag - Vrijdag: 9:00 - 17:00</p>
-                    <p>Weekend: Op afspraak</p>
+                    <p>Zaterdag: Op afspraak</p>
                   </div>
                 </CardContent>
               </Card>
