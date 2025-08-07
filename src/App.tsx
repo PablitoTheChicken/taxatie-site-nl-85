@@ -21,6 +21,12 @@ const SitemapRedirect = () => {
   return null;
 };
 
+const RobotsRedirect = () => {
+  useEffect(() => {
+    window.location.href = '/robots.txt';
+  }, []);
+  return null;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -36,6 +42,7 @@ const App = () => (
             <Route path="/over" element={<Over />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/sitemap.xml" element={<SitemapRedirect />} />
+            <Route path="/robots.txt" element={<RobotsRedirect />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
