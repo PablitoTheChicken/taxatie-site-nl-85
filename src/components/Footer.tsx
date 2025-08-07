@@ -31,17 +31,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Diensten</h3>
-            <ul className="space-y-2 text-primary-foreground/80">
-              <li>Woningtaxaties</li>
-              <li>Appartementtaxaties</li>
-              
-              
-            </ul>
-          </div>
-
           {/* Logos */}
           <div className="flex flex-col items-center text-center">
             <h3 className="text-lg font-semibold mb-4">Kwalificaties</h3>
