@@ -6,7 +6,7 @@ const Over = () => {
   const qualifications = [{
     icon: Award,
     title: "NRVT Gecertificeerd",
-    description: "Lid van de Nederlandse Register van Vastgoed Taxateurs"
+    description: "Lid van het Nederlandse Register van Vastgoed Taxateurs"
   }, {
     icon: Users,
     title: "25+ Jaar Ervaring",
