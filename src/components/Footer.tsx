@@ -31,7 +31,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Logos */}
+          {/* Empty space */}
+          <div></div>
+
+          {/* Qualifications - moved to far right */}
           <div className="flex flex-col items-center text-center">
             <h3 className="text-lg font-semibold mb-4">Kwalificaties</h3>
             <div className="space-y-4 flex flex-col items-center">
