@@ -6,7 +6,7 @@ const Over = () => {
   const qualifications = [{
     icon: Award,
     title: "NRVT Gecertificeerd",
-    description: "Lid van het Nederlandse Register van Vastgoed Taxateurs"
+    description: "Lid van de Nederlandse Register van Vastgoed Taxateurs"
   }, {
     icon: Users,
     title: "25+ Jaar Ervaring",
@@ -42,11 +42,10 @@ const Over = () => {
                 <div className="space-y-4 text-muted-foreground">
                   <p>TK Woningtaxaties is opgericht vanuit de passie voor onroerend goed. Met meer dan 25 jaar ervaring in de sector, hebben wij reeds honderden succesvolle taxaties mogen uitvoeren.</p>
                   <p>Wij zijn gespecialiseerd in woning- en appartementtaxaties. Onze gevalideerde rapporten voldoen aan alle NRVT en NWWI-normen en worden geaccepteerd door alle Nederlandse banken en financiële instellingen.</p>
-                  <p>
-                    Wat ons onderscheidt is onze persoonlijke benadering. Elke taxatie wordt uitgevoerd 
-                    door een ervaren taxateur die de lokale markt goed kent. Wij nemen de tijd voor 
-                    een grondige inspectie en uitgebreide marktanalyse.
-                  </p>
+                  <p>Wat ons onderscheidt is onze persoonlijke benadering en korte lijnen. Elke taxatie wordt uitgevoerd door een ervaren taxateur die de lokale en regionale markt goed kent. Wij nemen de tijd voor een grondige inspectie en uitgebreide marktanalyse.
+
+
+Heeft u vragen? Neemt u dan contact met mij op via email of via </p>
                 </div>
               </div>
             </div>
@@ -59,8 +58,8 @@ const Over = () => {
             <h2 className="text-3xl font-bold text-center">Onze Kwalificaties</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {qualifications.map((qual, index) => {
-                const IconComponent = qual.icon;
-                return <Card key={index} className="shadow-card-professional bg-gradient-primary text-white">
+              const IconComponent = qual.icon;
+              return <Card key={index} className="shadow-card-professional bg-gradient-primary text-white">
                       <CardContent className="p-6">
                         <div className="flex items-start">
                           <div className="p-3 bg-white/20 rounded-full mr-4">
@@ -73,7 +72,7 @@ const Over = () => {
                         </div>
                       </CardContent>
                     </Card>;
-              })}
+            })}
             </div>
           </div>
         </div>
