@@ -7,7 +7,7 @@ const Tarieven = () => {
   const pricingPlans = [{
     name: "Taxatie Woning",
     price: "€450,- / €495,-",
-    description: "Afhankelijk van woningwaarde",
+    description: "",
     features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"],
     priceBreakdown: [
       { range: "Tot €600.000", price: "€450,-" },
@@ -41,11 +41,11 @@ const Tarieven = () => {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {pricingPlans.map((plan, index) => (
-            <Card key={index} className="relative shadow-card-professional hover:shadow-professional transition-all">
+            <Card key={index} className="relative shadow-card-professional hover:shadow-professional transition-all flex flex-col">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <div className="text-3xl font-bold text-primary">{plan.price}</div>
-                <p className="text-muted-foreground">{plan.description}</p>
+                {plan.description && <p className="text-muted-foreground">{plan.description}</p>}
                 {plan.priceBreakdown && (
                   <div className="mt-4 space-y-2">
                     {plan.priceBreakdown.map((breakdown, breakdownIndex) => (
@@ -57,8 +57,8 @@ const Tarieven = () => {
                   </div>
                 )}
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
+              <CardContent className="flex-grow flex flex-col">
+                <ul className="space-y-3 mb-6 flex-grow">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
                       <Check className="h-4 w-4 text-accent mr-3" />
@@ -66,7 +66,7 @@ const Tarieven = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-gradient-primary" asChild>
+                <Button className="w-full bg-gradient-primary mt-auto" asChild>
                   <Link to="/contact">Afspraak Maken</Link>
                 </Button>
               </CardContent>
