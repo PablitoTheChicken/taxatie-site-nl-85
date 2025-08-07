@@ -52,8 +52,8 @@ const Tarieven = () => {
                 {plan.priceBreakdown && (
                   <div className="mt-4 space-y-2">
                     {plan.priceBreakdown.map((breakdown, breakdownIndex) => (
-                      <div key={breakdownIndex} className="flex justify-between items-center p-2 bg-muted/30 rounded">
-                        <span className="text-sm text-muted-foreground">{breakdown.range}</span>
+                      <div key={breakdownIndex} className={`flex items-center p-2 bg-muted/30 rounded ${breakdown.range ? 'justify-between' : 'justify-center'}`}>
+                        {breakdown.range && <span className="text-sm text-muted-foreground">{breakdown.range}</span>}
                         <span className="text-lg font-semibold text-primary">{breakdown.price}</span>
                       </div>
                     ))}
