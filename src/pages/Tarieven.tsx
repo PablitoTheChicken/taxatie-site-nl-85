@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+
 const Tarieven = () => {
   const pricingPlans = [{
     name: "Taxatie Woning",
@@ -9,21 +10,19 @@ const Tarieven = () => {
     description: "Voor woningen tot €600.000",
     features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
   }, {
-    name: "Taxatie Woning Plus",
-    price: "€495,-",
-    description: "Voor woningen vanaf €600.000",
-    features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
-  }, {
     name: "Taxatie Appartement",
     price: "€495,-",
     description: "Voor appartementen",
     features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 7 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "VvE-gegevens analyse"]
   }];
+
   const additionalServices = [{
     service: "Taxatie voor en na verbouwing",
     price: "+€50,-"
   }];
-  return <div className="min-h-screen py-20">
+
+  return (
+    <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -36,8 +35,9 @@ const Tarieven = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {pricingPlans.map((plan, index) => <Card key={index} className="relative shadow-card-professional hover:shadow-professional transition-all">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {pricingPlans.map((plan, index) => (
+            <Card key={index} className="relative shadow-card-professional hover:shadow-professional transition-all">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <div className="text-3xl font-bold text-primary">{plan.price}</div>
@@ -45,16 +45,19 @@ const Tarieven = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-6">
-                  {plan.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center">
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center">
                       <Check className="h-4 w-4 text-accent mr-3" />
                       <span className="text-sm">{feature}</span>
-                    </li>)}
+                    </li>
+                  ))}
                 </ul>
                 <Button className="w-full bg-gradient-primary" asChild>
                   <Link to="/contact">Afspraak Maken</Link>
                 </Button>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
 
         {/* Additional Services */}
@@ -62,10 +65,12 @@ const Tarieven = () => {
           <h2 className="text-2xl font-bold text-center mb-8">Extra Diensten</h2>
           <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-4 max-w-md w-full">
-              {additionalServices.map((item, index) => <div key={index} className="flex justify-between items-center p-4 bg-primary/10 border border-primary/20 rounded-lg">
+              {additionalServices.map((item, index) => (
+                <div key={index} className="flex justify-between items-center p-4 bg-primary/10 border border-primary/20 rounded-lg">
                   <span className="font-medium text-primary">{item.service}</span>
                   <span className="text-primary font-bold">{item.price}</span>
-                </div>)}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -81,6 +86,8 @@ const Tarieven = () => {
           </Button>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Tarieven;
