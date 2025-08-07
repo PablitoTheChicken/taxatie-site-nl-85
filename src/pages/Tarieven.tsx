@@ -6,9 +6,13 @@ import { Link } from "react-router-dom";
 const Tarieven = () => {
   const pricingPlans = [{
     name: "Taxatie Woning",
-    price: "€450,-",
-    description: "Voor woningen tot €600.000",
-    features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"]
+    price: "€450,- / €495,-",
+    description: "Afhankelijk van woningwaarde",
+    features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"],
+    priceBreakdown: [
+      { range: "Tot €600.000", price: "€450,-" },
+      { range: "Vanaf €600.000", price: "€495,-" }
+    ]
   }, {
     name: "Taxatie Appartement",
     price: "€495,-",
@@ -42,6 +46,16 @@ const Tarieven = () => {
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <div className="text-3xl font-bold text-primary">{plan.price}</div>
                 <p className="text-muted-foreground">{plan.description}</p>
+                {plan.priceBreakdown && (
+                  <div className="mt-4 space-y-2">
+                    {plan.priceBreakdown.map((breakdown, breakdownIndex) => (
+                      <div key={breakdownIndex} className="flex justify-between items-center p-2 bg-muted/30 rounded">
+                        <span className="text-sm text-muted-foreground">{breakdown.range}</span>
+                        <span className="text-lg font-semibold text-primary">{breakdown.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-6">
