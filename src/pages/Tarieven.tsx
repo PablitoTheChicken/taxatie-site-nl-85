@@ -85,7 +85,7 @@ const Tarieven = () => {
               {additionalServices.map((item, index) => (
                 <div key={index} className="flex justify-between items-center p-4 bg-primary/10 border border-primary/20 rounded-lg">
                   <span className="font-medium text-primary">{item.service}</span>
-                  <span className="text-primary font-bold">{item.price}</span>
+                  <span className="text-primary font-bold whitespace-nowrap">{item.price}</span>
                 </div>
               ))}
             </div>
