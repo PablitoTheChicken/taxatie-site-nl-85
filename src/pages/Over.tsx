@@ -45,7 +45,7 @@ const Over = () => {
                   <p>Wat ons onderscheidt is onze persoonlijke benadering en korte lijnen. Elke taxatie wordt uitgevoerd door een ervaren taxateur die de lokale en regionale markt goed kent. Wij nemen de tijd voor een grondige inspectie en uitgebreide marktanalyse.
 
 
-Heeft u vragen? Neemt u dan contact met mij op via email of via </p>
+Heeft u vragen? Neemt u dan contact met mij op via email of via +31 (0)6 2256 4249</p>
                 </div>
               </div>
             </div>
