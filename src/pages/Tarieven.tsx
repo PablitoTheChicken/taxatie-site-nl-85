@@ -15,9 +15,12 @@ const Tarieven = () => {
     ]
   }, {
     name: "Taxatie Appartement",
-    price: "€495,-",
-    description: "Voor appartementen",
-    features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 7 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "VvE-gegevens analyse"]
+    price: "",
+    description: "",
+    features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 7 werkdagen", "Digitaal dossier bij taXapi", "Persoonlijke toelichting mogelijk", "VvE-gegevens analyse"],
+    priceBreakdown: [
+      { range: "", price: "€495,-" }
+    ]
   }];
 
   const additionalServices = [{
