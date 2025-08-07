@@ -29,11 +29,11 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Processing contact form submission:", { name, email, serviceType });
 
-    // Send confirmation email to customer
+    // Send confirmation email to customer (temporarily to your verified email for testing)
     const customerEmailResponse = await resend.emails.send({
       from: "TaxatiePro <onboarding@resend.dev>",
-      to: [email],
-      subject: "Bevestiging van uw taxatie-aanvraag",
+      to: ["pablitothechicken@outlook.com"], // Changed to verified email for testing
+      subject: `Bevestiging taxatie-aanvraag van ${name} (${email})`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333;">Bedankt voor uw aanvraag, ${name}!</h2>
