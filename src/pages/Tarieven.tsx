@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Tarieven = () => {
   const pricingPlans = [{
     name: "Taxatie Woning",
-    price: "€450,- / €495,-",
+    price: "",
     description: "",
     features: ["Volledige NRVT-conforme taxatie", "Gevalideerd door NWWI", "Gedetailleerd rapport binnen 5 werkdagen", "Digitaal dossier bij taXapi", "Telefonische toelichting mogelijk", "Extra aandacht voor bijzonderheden"],
     priceBreakdown: [
