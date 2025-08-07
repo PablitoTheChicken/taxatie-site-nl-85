@@ -23,7 +23,6 @@ const Contact = () => {
   } = useToast();
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!formData.name || !formData.email || !formData.serviceType) {
       toast({
         title: "Vul alle verplichte velden in",
@@ -32,11 +31,12 @@ const Contact = () => {
       });
       return;
     }
-
     setIsSubmitting(true);
-    
     try {
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+      const {
+        data,
+        error
+      } = await supabase.functions.invoke('send-contact-email', {
         body: {
           name: formData.name,
           email: formData.email,
@@ -46,16 +46,13 @@ const Contact = () => {
           message: formData.message
         }
       });
-
       if (error) {
         throw error;
       }
-
       toast({
         title: "Bericht verzonden!",
         description: "Wij nemen binnen 24 uur contact met u op. U ontvangt een bevestigingsmail."
       });
-      
       setFormData({
         name: "",
         email: "",
@@ -203,7 +200,7 @@ const Contact = () => {
                 <div className="mt-6 p-4 bg-muted/50 rounded-lg">
                   <h3 className="font-semibold mb-2">Wat gebeurt er na uw aanvraag?</h3>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Wij nemen binnen 24 uur contact met u op</li>
+                    <li>• Wij nemen zo spoedig mogelijk contact met u op</li>
                     <li>• Alle ins en outs worden met u besproken</li>
                     <li>• Bij akkoord plannen wij de inspectie</li>
                     <li>• Een digitaal taxatie-dossier (taXapi) wordt voor u aangemaakt</li>
